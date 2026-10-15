@@ -1,0 +1,27 @@
+{
+  "name": "overchat-bulk-9router",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bulk-create Overchat accounts, auto-harvest access tokens + cookies, and serve them to 9Router as a load-balanced OpenAI-compatible pool. Zero-dependency Node.",
+  "keywords": ["overchat", "9router", "openai-compatible", "bulk", "account-generator", "llm", "proxy", "adapter"],
+  "license": "MIT",
+  "author": "0xgetz",
+  "type": "commonjs",
+  "main": "src/cli.js",
+  "bin": {
+    "overchat-bulk": "src/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "create": "node src/cli.js create",
+    "list": "node src/cli.js list",
+    "health": "node src/cli.js health",
+    "test": "node src/cli.js test",
+    "models": "node src/cli.js models",
+    "serve": "node src/adapter.js",
+    "connect": "node src/connect-9router.js"
+  },
+  "optionalDependencies": {}
+}

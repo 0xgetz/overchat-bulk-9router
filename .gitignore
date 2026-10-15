@@ -1,0 +1,16 @@
+# local state & secrets
+config.json
+accounts.json
+*.log
+
+# browsers
+.chrome-profile/
+
+# deps (optional IMAP package only)
+node_modules/
+npm-debug.log*
+
+# os / editor
+.DS_Store
+.idea/
+.vscode/

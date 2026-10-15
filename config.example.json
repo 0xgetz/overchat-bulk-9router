@@ -1,0 +1,17 @@
+{
+  "mailbox": "you@example.com",
+  "inboxProvider": "agentmail",
+  "poolFile": "accounts.json",
+  "adapterUrl": "http://127.0.0.1:8790/v1",
+  "prefix": "overchat",
+  "port": 8790,
+  "router": "https://9router.com",
+  "routerPassword": "123456",
+  "imap": {
+    "host": "imap.example.com",
+    "port": 993,
+    "user": "you@example.com",
+    "pass": "",
+    "base": "you@example.com"
+  }
+}

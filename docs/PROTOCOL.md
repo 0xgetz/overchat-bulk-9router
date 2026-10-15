@@ -121,7 +121,14 @@ Stop a generation: `POST /v1/chat/completions/stop { chatId, personaId }`.
 - Premium models: `403 {"error":"This bot is only available on paid plans"}`.
 - Quota spent: `403 {"error":"You've reached your plan quota. …"}`, with a
   `reset after <n>m` hint on the HTTP error path.
-- Usable on free: `auto-model` (GPT-5 nano), `gemini-3-5-flash`.
+- **Usable on free** (verified live on fresh `coins:100` accounts): `auto-model`
+  (`gpt-5-nano`), `gemini-3-5-flash` (`google/gemini-3.8-flash`), and every persona that
+  maps to a cheap nano model — the "landing"/"widget" aliases:
+  `ai-text-generator`, `gpt-4o-landing`, `free-chat-gpt-landing`, `qwen-3-landing`,
+  `deepseek-4-landing`, `best-free-ai-chat-landing`, `claude-opus-4-6-landing`,
+  `grok-4-2-landing` (all → `openai/gpt-4.1-nano`), plus `band-name-generator-widget`,
+  `dnd-name-generator-widget` (→ `gpt-4.1-nano-2025-04-14`).
+  See the **Models** section of the README for the full free vs premium tables.
 
 ## Other endpoints (from the web bundle)
 
